@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Exponential Growth Calculator</title>
+  </head>
+  <body>
+    <h1>Exponential Growth Calculator</h1>
+    <form onsubmit="calculate(event)">
+      <label>
+        <span>Starting capital:</span>
+        <input type="number" name="startCapital" required>
+      </label>
+      <label>
+        <span>Annual interest rate (%):</span>
+        <input type="number" name="annualInterestRate" step="0.01" required>
+      </label>
+      <label>
+        <span>Monthly incoming:</span>
+        <input type="number" name="monthlyIncoming" required>
+      </label>
+      <label>
+        <span>Years:</span>
+        <input type="number" name="years" required>
+      </label>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
